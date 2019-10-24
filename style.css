@@ -7,7 +7,7 @@ p {
     font-style: italic;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 300px) {
     body {
         color: red;
     }
