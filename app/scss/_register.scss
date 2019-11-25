@@ -1,0 +1,19 @@
+.register {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 80px 0;
+
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: #A37169;
+    }
+}
+
+.register-img {
+    background-image: url("photo-mountain.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,17 @@
+.awesome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon-flex {
+        display: flex;
+        justify-content: space-between;
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+        }
+    }
+}

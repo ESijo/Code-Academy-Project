@@ -1,0 +1,24 @@
+.pricing {
+    background-color: #6696E2;
+
+    .prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .black {
+            background-color: #333333;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

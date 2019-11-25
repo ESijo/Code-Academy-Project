@@ -1,0 +1,29 @@
+.hero-img {
+    background-image: url("photo-hero.svg");
+    background-position: bottom;
+    background-size: cover;
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 100px 0;
+
+        .hero-text {
+            padding: 20px 0;
+            color: white;
+
+            h2 {
+                padding: 0 410px 0 0;
+            }
+        }
+    
+    .grey {
+        background-color: #F5F5F5;
+        padding: 0 30px;
+        }
+    }
+}
+
+
+
+
