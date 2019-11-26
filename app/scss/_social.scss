@@ -2,5 +2,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    height: 15vh;
+    font-family: $main-font;
+
+    .social-img {
+        opacity: 65%;
+    }
+
+    .social-media {
+        padding: 0 50px 0 0;
+        width: 50%;
+        
+        p {
+            color: #86878B;
+            margin: 10px 0 0 0;
+            font-weight: 400;
+        }
+
+        h4 {
+            margin: 0 auto;
+            font-weight: 600;
+            color: #333333;
+        }
+    }
+
+   
+
 }

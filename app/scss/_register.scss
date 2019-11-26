@@ -4,15 +4,38 @@
     color: white;
     padding: 80px 0;
 
-    .square {
-        width: 100px;
-        height: 100px;
-        background-color: #A37169;
+    .register-text {
+        margin: 0 50px;
     }
+
+    .three-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: #A37169;
+            flex-shrink: 0;
+             
+            .square-text {
+                text-transform: uppercase;
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+
+    
 }
 
 .register-img {
-    background-image: url("photo-mountain.svg");
+    background: linear-gradient(90deg, rgba(204,125,124,0.4) 0%, rgba(119,145,209,0.4) 100%), url("photo-mountain.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

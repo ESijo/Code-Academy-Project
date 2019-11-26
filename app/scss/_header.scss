@@ -1,21 +1,38 @@
 header {
-    background-color: black;
-    color: white;
+    background-color: $color-black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
     div {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 0;
+
+        .nav {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                margin: 0 20px;
+                color: $color-white;
+                opacity: 69%;
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: 400;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+
+            
+    
+        }
+    
     }
 
-    .nav {
-        list-style-type: none;
-        display: flex;
-
-    }
-
-    li {
-        margin: 0 20px;
-    }
 }

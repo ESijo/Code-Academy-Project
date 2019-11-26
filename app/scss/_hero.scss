@@ -1,25 +1,40 @@
 .hero-img {
-    background-image: url("photo-hero.svg");
-    background-position: bottom;
+    background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("photo-hero.svg");
+    background-position: center;
     background-size: cover;
+    height: 85vh;
 
     .hero {
         display: flex;
         justify-content: space-between;
-        padding: 50px 0 100px 0;
+        align-items: center;
+        padding: 100px 0 0 0;
 
         .hero-text {
             padding: 20px 0;
-            color: white;
+            color: $color-white;
+            font-family: $main-font;
+            font-weight: 600;
 
             h2 {
-                padding: 0 410px 0 0;
+                margin: 30px 360px 40px 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0 200px 30px 0;
+                opacity: 80%;
             }
         }
     
     .grey {
         background-color: #F5F5F5;
         padding: 0 30px;
+        border-radius: 8px 8px 0 0;
+
+        span {
+            color: $color-pink;
+        }
         }
     }
 }

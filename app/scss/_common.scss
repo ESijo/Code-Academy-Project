@@ -1,5 +1,15 @@
+$color-grey: #F5F5F5;
+$color-pink: #E27866;
+$color-black: #1C1C1C;
+$color-blue: #6696E2;
+$color-green: #41D395;
+$color-white: #FFFFFF;
+
+$main-font: 'Montserrat', sans-serif; 
+
 * {
     box-sizing: border-box;
+    font-family: $main-font;
 }
 
 h2 {
@@ -18,9 +28,9 @@ h4 {
     display: flex;
     flex-direction: column;
     background-color: white;
-    text-align: center;
-    width: 560px;
-
+    width: 80%;
+    border-radius: 8px;
+    font-family: $main-font;
 }
 
 .column {

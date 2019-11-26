@@ -1,5 +1,12 @@
 .contacts {
-    background-color: #E27866;
+    background-color: $color-pink;
+
+    .form {
+        
+        button {
+            background-color: $color-green;
+        }
+    }
 
     h2, p {
         color: white;
