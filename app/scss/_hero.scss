@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
     height: 85vh;
+    min-height: 500px;
 
     .hero {
         display: flex;
@@ -44,19 +45,19 @@
 
                     input {
                         display: none;
-                      }
+                    }
                       
-                      input:checked + label {
-                        .radio-circle {
-                          opacity: 1;
-                          
-                          &:after {
+                        input:checked + label {
+                            .radio-circle {
                             opacity: 1;
-                          }
+                          
+                                &:after {
+                                opacity: 1;
+                                }
+                            }
                         }
-                      }
                       
-                      label {
+                    label {
                         display: flex;
                         align-items: center;
                         cursor: pointer;
@@ -65,10 +66,11 @@
                           margin-left: 8px;
                           text-transform: uppercase;
                           font-size: 9px;
+                          opacity: 50%;
                         }
-                    }
+                    
                       
-                      .radio-circle {
+                       .radio-circle {
                         position: relative;
                         width: 15px;
                         height: 15px;
@@ -92,7 +94,8 @@
                           transition: 0.3s ease-in-out;
                           opacity: 0;
                         }       
-                      }        
+                      } 
+                    }         
                 }             
               }
 
@@ -131,6 +134,16 @@
 
             h2 {
                 margin: 30px 300px 40px 0;
+                position: relative;
+
+                &:after {
+                    content:'';
+                    width: 15%;
+                    border-bottom: solid 2px #fff;
+                    position: absolute;
+                    left: 0.5%;
+                    top: 120%;
+                }
             }
 
             p {

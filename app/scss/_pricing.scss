@@ -3,22 +3,112 @@
 
     .prices {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin: 30px 0;
+        align-items: flex-end;
 
-        .black {
-            background-color: #333333;
-            color: white;
+        .price-container {
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            border-radius: 5px;
+
+            .first-green {
+                li {
+                    &:first-child {
+                        background-color: $color-green;
+                        color: $color-white;
+                    }
+                }
+            }
+
+            .green {
+                background-color: $color-green;
+            }
+
+            .green.small {
+                height: 6px;
+                width: 100%;
+            }
+
+            ul {
+                background-color: $color-white;
+                margin: 0 0;
+                text-align: center;
+                padding: 0 0;
+                border-radius: 0 0 5px 5px;
+                list-style-type: none;
+
+                li {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    color: #86878B;
+                    padding: 10px 0;
+                    
+                }
+            }
         }
 
-        ul {
-            list-style-type: none;
+        .profesional {
+            margin: 0 40px;
+        }
+
+        .black {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333333;
+            color: white;
+            border-radius: 5px 5px 0 0;
+
+            p {
+                opacity: 50%;
+            }
+
+            h4 {
+                font-weight: 400;
+            }
+
+            h2 {
+                font-size: 94px;
+                font-weight: 400;
+                margin: 0 auto;
+
+                span {
+                    font-size: 35px;
+                    font-weight: 400;
+                }
+            }
         }
     }
 
     .column {
         display: flex;
         flex-direction: column;
+        padding-top: 50px;
+
+
+        h2 {
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: relative;
+
+            &:after {
+                content:'';
+                width: 64px;
+                border-bottom: solid 2px $color-green;
+                position: absolute;
+                left: 40%;
+                top: 140%;
+            }
+        }
+
+        p {
+            color: $color-white;
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 
 }

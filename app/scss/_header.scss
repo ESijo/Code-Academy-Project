@@ -3,7 +3,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
 
     div {
         display: flex;
@@ -16,7 +16,7 @@ header {
             display: flex;
 
             li {
-                margin: 0 20px;
+                margin-left: 40px;
                 color: $color-white;
                 opacity: 69%;
                 font-size: 14px;

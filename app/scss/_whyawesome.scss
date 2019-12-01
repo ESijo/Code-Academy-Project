@@ -7,6 +7,16 @@
     h2 {
         text-transform: uppercase;
         color: #212121;
+        position: relative;
+
+        &:after {
+            content:'';
+            width: 64px;
+            border-bottom: solid 2px $color-pink;
+            position: absolute;
+            left: 40%;
+            top: 140%;
+        }
     }
 
     p {

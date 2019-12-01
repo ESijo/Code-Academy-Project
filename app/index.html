@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>CA_Exam</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     </head>
     <body>
         <header>
@@ -11,11 +12,11 @@
                 <img src="Group 94.svg" alt="logo" height="52.06" width="119.37">
                 <nav>
                     <ul class="nav">
-                        <li><a href='#'>Features</a></li>
-                        <li><a href='#'>About</a></li>
-                        <li><a href='#'>Pricing</a></li>
-                        <li><a href='#'>Reviews</a></li>
-                        <li><a href='#'>Contact</a></li>
+                        <li><a href="#" class="menu-link">Features</a></li>
+                        <li><a href='#' class="menu-link">About</a></li>
+                        <li><a href='#' class="menu-link">Pricing</a></li>
+                        <li><a href='#' class="menu-link">Reviews</a></li>
+                        <li><a href='#' class="menu-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -70,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="register-img">
+        <section id="Features" class="register-img">
             <div class="container register">
                 <div class="three-square">
                     <div class="square"><div class="square-text">Register</div></div>
@@ -114,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="About">
             <div class="container awesome">
                 <h2>Why this is Awesome</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -137,18 +138,18 @@
                 </div>
             </div>
         </section>
-        <section class="pricing">
+        <section id="Pricing" class="pricing">
             <div class="container column">
                 <h2>Pricing options</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="prices">
-                    <div>
+                    <div class="price-container">
                         <div class="black">
                             <h4>Basic</h4>
-                            <h2>$0</h2>
+                            <h2><span>$</span>0</h2>
                             <p>Free for Life</p>
                         </div>
-                        <div></div>
+                        <div class="green small"></div>
                         <ul>
                             <li>1 gb of space</li>
                             <li>10 gb of bandwidth</li>
@@ -158,13 +159,14 @@
                             <li>email support</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="price-container profesional">
                         <div class="black">
                             <h4>Profesional</h4>
-                            <h2>$19</h2>
+                            <h2><span>$</span>19</h2>
                             <p>Monthly Payment</p>
                         </div>
-                        <ul>
+                        <div class="green"></div>
+                        <ul class="first-green">
                             <li>our most popular</li>
                             <li>5 gb of space</li>
                             <li>50 gb of bandwidth</li>
@@ -174,13 +176,13 @@
                             <li>email support</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="price-container">
                         <div class="black">
                             <h4>Enterprice</h4>
-                            <h2>$70</h2>
+                            <h2><span>$</span>70</h2>
                             <p>Monthly Payment</p>
                         </div>
-                        <div></div>
+                        <div class="green small"></div>
                         <ul>
                             <li>unlimited space</li>
                             <li>unlimited bandwidth</li>
@@ -193,10 +195,203 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container">Galerija</div>
+        <section id="Reviews">
+            <div class="container">
+                <h2 class="review-headline">What our customers are saying</h2>
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="message">
+                                <div class="chat-bubble">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    </p>
+                                </div>
+                                <div class="commentator">
+                                    <div class="image"></div>
+                                    <div class="image-text">
+                                        <p class="name">Jeremy H.</p>
+                                        <p class="profession">Manager</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
         </section>
-        <section class="contacts">
+        <section id="Contact" class="contacts">
             <div class="column">
                 <h2>Contact us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -205,22 +400,22 @@
                     <input class="contacts-input" type="text" placeholder="Last name">
                     <input class="contacts-input" type="text" placeholder="Phone number">
                     <div class="radio-buttons">
-                            <div class="custom-radio">
-                                <input type="radio" id="radio_1" name="radio-label" value="1">
-                                <label for="radio_1">
-                                  <div class="radio-circle"></div>
-                                  <span>monthly</span>
-                                </label>
-                            </div>
-                            <div class="custom-radio">
-                                <input type="radio" id="radio_2" name="radio-label" value="2">
-                                <label for="radio_2">
-                                  <div class="radio-circle"></div>
-                                  <span>yearly</span>
-                                </label>
-                            </div>
+                        <div class="custom-radio">
+                            <input type="radio" id="radio_4" name="radio-label" value="1">
+                            <label for="radio_4">
+                                <div class="radio-circle"></div>
+                                <span>personal</span>
+                            </label>
                         </div>
-                    <button>Send</button>
+                        <div class="custom-radio">
+                            <input type="radio" id="radio_3" name="radio-label" value="2">
+                            <label for="radio_3">
+                                <div class="radio-circle"></div>
+                                <span>company</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button-container"><button class="send">Send</button></div>
                 </div>
             </div>
         </section>
@@ -238,5 +433,7 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="script.js"></script>    
     </body>
 </html>

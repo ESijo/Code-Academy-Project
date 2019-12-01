@@ -5,7 +5,19 @@
     padding: 80px 0;
 
     .register-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: 0 50px;
+
+        h2 {
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 
     .three-square {
@@ -26,6 +38,9 @@
             .square-text {
                 text-transform: uppercase;
                 transform: rotate(-45deg);
+                opacity: 50%;
+                font-size: 14px;
+                font-weight: 600;
             }
         }
 

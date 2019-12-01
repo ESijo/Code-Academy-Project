@@ -13,7 +13,7 @@ gulp.task('serve', gulp.series(function(done) {
 
     gulp.watch("app/scss/*.scss", gulp.series('sass'));
     gulp.watch("app/*.html").on('change', browserSync.reload);
-
+    gulp.watch("app/script.js").on('change', browserSync.reload);
     done();
 }));
 
@@ -28,6 +28,12 @@ gulp.task('sass', gulp.series(function(done) {
         .pipe(browserSync.stream());
         done();
 }));
+
+gulp.task('js', function () {
+    gulp.src('app/scripts/*.js')
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest('app'))
+});
 
 gulp.task('default', gulp.parallel('serve', function () {
     gulp.series('serve')
