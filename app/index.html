@@ -32,11 +32,14 @@
                 <div class="form hero-form">
                     <div class="grey"><h4>Try Your <span>FREE</span> Trial Today</h4></div>
                     <p>Your details</p>
-                    <input class="input-text" type="text" placeholder="First name">
-                    <input class="input-text" type="text" placeholder="Last name">
-                    <input class="input-text" type="text" placeholder="Phone number"> 
+                    <input class="input-text" id="hero-name" type="text" placeholder="First name">
+                    <span class="error">Please, enter your name</span>
+                    <input class="input-text" id="hero-surname" type="text" placeholder="Last name">
+                    <span class="error">Please, enter your last name</span>
+                    <input class="input-text" id= "hero-phone" type="text" placeholder="Phone number"> 
+                    <span class="error">Please, enter your phone number</span>
                     <p>Type of subscription</p>
-                    <div class="radio-buttons">
+                    <div id="radio-buttons" class="radio-buttons">
                         <div class="custom-radio">
                             <input type="radio" id="radio_1" name="radio-label" value="1">
                             <label for="radio_1">
@@ -52,7 +55,8 @@
                             </label>
                         </div>
                     </div>
-                    <button class="hero-form-button">Get started</button>
+                    <span class="error">Please, select an option</span>
+                    <button id="hero-button" class="hero-form-button">Get started</button>
                 </div>
             </div>
         </section>
@@ -72,15 +76,15 @@
             </div>
         </section>
         <section id="Features" class="register-img">
-            <div class="container register">
+            <div class="container features" id="register">
                 <div class="three-square">
                     <div class="square"><div class="square-text">Register</div></div>
                     <div class="square"><div class="square-text">Apply</div></div>
                     <div class="square"><div class="square-text">Receive</div></div>
                 </div>
-                <div class="register-text">
+                <div class="features-text">
                     <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                 </div>
                 <div>
@@ -89,6 +93,40 @@
                     <img src="photo_three.svg">
                 </div>
             </div>
+            <div class="container features" id="apply">
+                    <div class="three-square">
+                        <div class="square"><div class="square-text">Register</div></div>
+                        <div class="square"><div class="square-text">Apply</div></div>
+                        <div class="square"><div class="square-text">Receive</div></div>
+                    </div>
+                    <div class="features-text">
+                        <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <img src="photo_one.svg">
+                        <img src="photo_two.svg">
+                        <img src="photo_three.svg">
+                    </div>
+                </div>
+                <div class="container features" id="receive">
+                        <div class="three-square">
+                            <div class="square"><div class="square-text">Register</div></div>
+                            <div class="square"><div class="square-text">Apply</div></div>
+                            <div class="square"><div class="square-text">Receive</div></div>
+                        </div>
+                        <div class="features-text">
+                            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                        <div>
+                            <img src="photo_one.svg">
+                            <img src="photo_two.svg">
+                            <img src="photo_three.svg">
+                        </div>
+                    </div>
         </section>
         <section class="big-logo">
             <div class="container logo-text">
@@ -220,7 +258,10 @@
                         <div class="swiper-slide">
                             <div class="message">
                                 <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    <p>Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit.
+                                            Doloribus accusamus
+                                            expedita.
                                     </p>
                                 </div>
                                 <div class="commentator">
@@ -292,96 +333,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="message">
-                                <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
-                                    </p>
-                                </div>
-                                <div class="commentator">
-                                    <div class="image"></div>
-                                    <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="message">
-                                <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
-                                    </p>
-                                </div>
-                                <div class="commentator">
-                                    <div class="image"></div>
-                                    <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="message">
-                                <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
-                                    </p>
-                                </div>
-                                <div class="commentator">
-                                    <div class="image"></div>
-                                    <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="message">
-                                <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
-                                    </p>
-                                </div>
-                                <div class="commentator">
-                                    <div class="image"></div>
-                                    <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="message">
-                                <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
-                                    </p>
-                                </div>
-                                <div class="commentator">
-                                    <div class="image"></div>
-                                    <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="message">
-                                <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
-                                    </p>
-                                </div>
-                                <div class="commentator">
-                                    <div class="image"></div>
-                                    <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+                        
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>

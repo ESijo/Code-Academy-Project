@@ -23,11 +23,12 @@
                 color: $color-white;
                 border-radius: 0 0 8px 8px;
                 border: none;
+                cursor: pointer;
             }
             .input-text {
                 border: none;
                 border-bottom: 1px solid #D8D8D8;
-                margin: 0 30px 20px 30px;
+                margin: 0 30px;
             }
             p {
                 font-size: 16px;
@@ -41,7 +42,6 @@
 
                 .custom-radio {
                     margin-left: 30px;
-                    margin-bottom: 30px;
 
                     input {
                         display: none;
