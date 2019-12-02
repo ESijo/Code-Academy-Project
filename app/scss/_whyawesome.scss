@@ -43,4 +43,17 @@
             }
         }
     }
+
+    @media (max-width: 1120px) {
+        .icon-flex {
+
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
 }

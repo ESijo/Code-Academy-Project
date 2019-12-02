@@ -162,11 +162,50 @@
         }
     
     }
+
+
 }
 
 ::placeholder {
     color: #D8D8D8;
     opacity: 1;
+}
+
+@media (max-width: 1120px) {
+    .hero-img {
+        height: auto;
+        padding: 0 30px 30px 30px;
+
+        .hero {
+            flex-direction: column;
+            max-width: 800px;
+
+            .hero-form {
+                width: auto;
+            }
+
+            .hero-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 600px;
+
+                h2 {
+                    text-align: center;
+                    margin-right: 0;
+
+                    &::after {
+                        left: 42.5%;
+                    }
+                }
+
+                p {
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 

@@ -9,8 +9,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding: 10px 0;
 
+        
         .nav {
             list-style-type: none;
             display: flex;
@@ -23,8 +23,11 @@ header {
                 opacity: 69%;
                 font-size: 14px;
                 font-weight: 400;
-               
 
+                &:hover {
+                    opacity: 100%;
+                }
+               
                 a {
                     display: inline-block;
                     text-decoration: none;
@@ -33,9 +36,9 @@ header {
                     padding: 27px 0;
                     overflow: hidden;
 
+
                     &:hover:after {
                         transform: translateX(0);
-                        
                     }
 
                     &:after {
@@ -58,8 +61,111 @@ header {
 
             
     
-        }
+        } 
     
     }
 
+    @media (max-width: 1120px) {
+       div {
+        padding: 10px 0px;
+        .nav {
+            display: none;
+          }
+       }
+    }   
+
 }
+
+.checkbox {
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .magic-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 64px;
+    width: 64px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: $color-black;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  @media (max-width: 1120px) {
+    .magic-label {
+      display: flex;
+    }
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 72px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: $color-black;
+    color: #707070;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .mobile-menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .mobile-menu ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 15px;
+
+    a {
+        color: white;
+        opacity: 69%;
+        text-decoration: none;
+        font-family: $main-font;
+    }
+  }
+  
+  .magic-label img {
+    width: 30px;
+  }
+  
+  .magic-label .menu-close {
+    display: none;
+  }
+  
+  .checkbox:checked + .magic-label .menu-open {
+    display: none;
+  }
+  
+  .checkbox:checked + .magic-label .menu-close {
+    display: block;
+  }
+  
+  .checkbox:checked ~ .mobile-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (min-width: 1120px) {
+    .magic-label {
+      display: none;
+    }
+
+    .checkbox:checked ~ .mobile-menu {
+        opacity: 1;
+        visibility: hidden;
+      }
+  }

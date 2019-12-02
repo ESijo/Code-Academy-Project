@@ -29,3 +29,16 @@
    
 
 }
+
+@media (max-width: 1120px) {
+    .social {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+
+        .social-media {
+            padding: 0 0 20px 0;
+            text-align: center;
+        }
+    }
+}

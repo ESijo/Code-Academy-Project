@@ -105,3 +105,27 @@
 #apply, #receive {
     display: none;
 }
+
+@media (max-width: 1120px) {
+    .features {
+        flex-direction: column;
+
+        .features-text {
+            text-align: center;
+        
+            height: auto;
+        }
+        
+
+        .three-square {
+            flex-direction: row;
+            justify-content: space-between;
+            height: auto;
+
+            .square {
+                margin: 0 20px;
+            }
+    
+        }
+    }
+}

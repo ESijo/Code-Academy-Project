@@ -18,4 +18,11 @@ footer {
             opacity: 50%;
         }
     }
+
+    @media (max-width: 1120px) {
+        .footer {
+            flex-direction: column;
+            padding: 20px 0 0 0;
+        }
+    }
 }

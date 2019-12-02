@@ -4,10 +4,13 @@ for (link of menuLinks) {
         el.preventDefault();
         var targetViewID = el.target.innerHTML;
         var targetViewElement = document.getElementById(targetViewID);
-        // targetViewElement.scrollIntoView({behavior: "smooth", block: "nearest"});
+        
         window.scrollTo({
             top: targetViewElement.offsetTop - 72
-        })
+        });
+
+        document.getElementById("checkbox").checked = false;
+
     })
 }
 
@@ -27,16 +30,6 @@ var mySwiper = new Swiper ('.swiper-container', {
       clickable: true,
     },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   })
 
   var heroButton = document.getElementById("hero-button");
@@ -128,3 +121,17 @@ var mySwiper = new Swiper ('.swiper-container', {
     })
 })
 
+var media = window.matchMedia("(max-width: 1120px)");
+
+function applyMediaQuery(event) {
+    if (event.matches) {
+        document.getElementById("checkbox").checked = false;
+
+        mySwiper.params.slidesPerView = 1;        
+    } else {
+        mySwiper.params.slidesPerView = 3; 
+    }
+
+}
+
+media.addListener(applyMediaQuery);
