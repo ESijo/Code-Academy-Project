@@ -87,10 +87,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                 </div>
-                <div>
-                    <img src="photo_one.svg">
-                    <img src="photo_two.svg">
-                    <img src="photo_three.svg">
+                <div class="features-img">
+                    <img class="img-one" src="phototwo.jpeg">
+                    <img class="img-two" src="photofour.jpeg">
+                    <img class="img-three" src="photosix.jpeg">
                 </div>
             </div>
             <div class="container features" id="apply">
@@ -104,10 +104,10 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div>
-                        <img src="photo_one.svg">
-                        <img src="photo_two.svg">
-                        <img src="photo_three.svg">
+                    <div class="features-img">
+                        <img class="img-one" src="photoone.jpeg">
+                        <img class="img-two" src="phototwo.jpeg">
+                        <img class="img-three" src="photothree.jpeg">
                     </div>
                 </div>
                 <div class="container features" id="receive">
@@ -121,10 +121,10 @@
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                         </div>
-                        <div>
-                            <img src="photo_one.svg">
-                            <img src="photo_two.svg">
-                            <img src="photo_three.svg">
+                        <div class="features-img">
+                            <img class="img-one" src="photofour.jpeg">
+                            <img class="img-two" src="photofive.jpeg">
+                            <img class="img-three" src="photosix.jpeg">
                         </div>
                     </div>
         </section>
@@ -267,8 +267,8 @@
                                 <div class="commentator">
                                     <div class="image"></div>
                                     <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
+                                        <p class="name">John S.</p>
+                                        <p class="profession">Freelancer</p>
                                     </div>
                                 </div> 
                             </div>
@@ -282,8 +282,8 @@
                                 <div class="commentator">
                                     <div class="image"></div>
                                     <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
+                                        <p class="name">Susan W.</p>
+                                        <p class="profession">Photographer</p>
                                     </div>
                                 </div> 
                             </div>
@@ -291,14 +291,14 @@
                         <div class="swiper-slide">
                             <div class="message">
                                 <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi teneturprovident sit animi.
                                     </p>
                                 </div>
                                 <div class="commentator">
                                     <div class="image"></div>
                                     <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
+                                        <p class="name">Aria S.</p>
+                                        <p class="profession">Princess</p>
                                     </div>
                                 </div> 
                             </div>
@@ -306,14 +306,14 @@
                         <div class="swiper-slide">
                             <div class="message">
                                 <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto animi.
                                     </p>
                                 </div>
                                 <div class="commentator">
                                     <div class="image"></div>
                                     <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
+                                        <p class="name">Harry P.</p>
+                                        <p class="profession">Wizzard</p>
                                     </div>
                                 </div> 
                             </div>
@@ -321,14 +321,14 @@
                         <div class="swiper-slide">
                             <div class="message">
                                 <div class="chat-bubble">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur            dicta, labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
+                                    <p>Lorem ipsum dolor sit amet labore accusamus iusto dolores repellat sapiente est ipsum                voluptatum nobis incidunt molestiae, facere odio, itaque aspernatur              provident sit animi.
                                     </p>
                                 </div>
                                 <div class="commentator">
                                     <div class="image"></div>
                                     <div class="image-text">
-                                        <p class="name">Jeremy H.</p>
-                                        <p class="profession">Manager</p>
+                                        <p class="name">Legolas</p>
+                                        <p class="profession">Elf</p>
                                     </div>
                                 </div> 
                             </div>
@@ -348,10 +348,13 @@
                 <h2>Contact us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="form contacts-form">
-                    <input class="contacts-input" type="text" placeholder="First name">
-                    <input class="contacts-input" type="text" placeholder="Last name">
-                    <input class="contacts-input" type="text" placeholder="Phone number">
-                    <div class="radio-buttons">
+                    <input id="contacts-name" class="contacts-input" type="text" placeholder="First name">
+                    <span class="contacts-error">Please, enter your name</span>
+                    <input id="contacts-surname" class="contacts-input" type="text" placeholder="Last name">
+                    <span class="contacts-error">Please, enter your last name</span>
+                    <input id="contacts-phone" class="contacts-input" type="text" placeholder="Phone number">
+                    <span class="contacts-error">Please, enter your phone number</span>
+                    <div id="contacts-buttons" class="radio-buttons">
                         <div class="custom-radio">
                             <input type="radio" id="radio_4" name="radio-label" value="1">
                             <label for="radio_4">
@@ -367,7 +370,8 @@
                             </label>
                         </div>
                     </div>
-                    <div class="button-container"><button class="send">Send</button></div>
+                    <span class="contacts-error">Please, select an option</span>
+                    <div class="button-container"><button id="contacts-button" class="send">Send</button></div>
                 </div>
             </div>
         </section>

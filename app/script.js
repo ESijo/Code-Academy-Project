@@ -73,6 +73,41 @@ var mySwiper = new Swiper ('.swiper-container', {
         }
   })
 
+  var contactsButton = document.getElementById("contacts-button");
+  var contactsName = document.getElementById("contacts-name");
+  var contactsSurname = document.getElementById("contacts-surname");
+  var contactsPhone = document.getElementById("contacts-phone");
+  var radioButtonFour = document.getElementById("radio_4");
+  var radioButtonThree = document.getElementById("radio_3");
+  var contactsButtons = document.getElementById("contacts-buttons");
+
+  contactsButton.addEventListener("click", function() {
+        if (contactsName.value.length === 0) {
+            contactsName.nextElementSibling.style.visibility = "visible";
+        } else {
+            contactsName.nextElementSibling.style.visibility = "hidden";
+        }
+
+        if (contactsSurname.value.length === 0) {
+            contactsSurname.nextElementSibling.style.visibility = "visible";
+        } else {
+            contactsSurname.nextElementSibling.style.visibility = "hidden";
+        }
+
+        if (contactsPhone.value.length === 0) {
+            contactsPhone.nextElementSibling.style.visibility = "visible";
+        } else {
+            contactsPhone.nextElementSibling.style.visibility = "hidden";
+        }
+
+        if (radioButtonFour.checked || radioButtonThree.checked) {
+            contactsButtons.nextElementSibling.style.visibility = "hidden";
+        } else {
+            contactsButtons.nextElementSibling.style.visibility = "visible";
+        }
+  })
+
+
   document.querySelectorAll(".square").forEach(function(el) {
       el.addEventListener("click", function(e) {
           var sectionID = e.target.firstElementChild.innerText.toLowerCase();

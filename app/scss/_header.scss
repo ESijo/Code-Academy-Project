@@ -9,22 +9,50 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
+        // padding: 10px 0;
 
         .nav {
             list-style-type: none;
             display: flex;
+            margin: 0;
 
             li {
+                display: flex;
                 margin-left: 40px;
                 color: $color-white;
                 opacity: 69%;
                 font-size: 14px;
                 font-weight: 400;
+               
 
                 a {
+                    display: inline-block;
                     text-decoration: none;
                     color: inherit;
+                    position: relative;
+                    padding: 27px 0;
+                    overflow: hidden;
+
+                    &:hover:after {
+                        transform: translateX(0);
+                        
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 100%;
+                        height: 2px;
+                        background: #E27866;
+                        transform: translateX(100%);
+                        transition-delay: 0.3s;
+                        width: 100%;
+                        transition: 0.3s ease-in-out;
+                    }
                 }
             }
 

@@ -123,6 +123,7 @@
             font-weight: 600;
 
             .hero-text-button {
+                position: relative;
                 border: 2px solid $color-white;
                 background-color: transparent;
                 color: $color-white;
@@ -130,6 +131,13 @@
                 font-weight: 600;
                 padding: 8px 15px;
                 text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                    content: "";
+                    background-color: $color-white;
+                    color: $color-black;
+                }
             }
 
             h2 {
